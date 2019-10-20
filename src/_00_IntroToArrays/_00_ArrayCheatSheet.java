@@ -9,6 +9,7 @@ public class _00_ArrayCheatSheet {
 	
 	
 	public static void main(String[] args) {
+		
 		//1. make an array of 5 Strings
 		String[] array = new String[5];
 		array[0] = "0";
@@ -43,12 +44,15 @@ public class _00_ArrayCheatSheet {
 		//8. use a for loop to make every value of the integer array a random number
 		Random rdm = new Random();
 		for(int i=0;i<arrayint.length;i++) {
-		int ran = rdm.nextInt(50);
+	int ran = rdm.nextInt(50);
 		arrayint[i] = ran;
 		//System.out.println(arrayint[i]);
+		
+		
+		
 		}
 		//9. without printing the entire array, print only the smallest number on the array
-
+		
 		//10 print the entire array to see if step 8 was correct
 
 		//11. print the largest number in the array.
