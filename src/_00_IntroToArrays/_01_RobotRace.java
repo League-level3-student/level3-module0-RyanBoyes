@@ -7,12 +7,14 @@ import javax.swing.JOptionPane;
 import org.jointheleague.graphical.robot.Robot;
 
 public class _01_RobotRace {
+	
 	//1. make a main method
+	
 	
 		//2. create an array of 5 robots.
 
 		//3. use a for loop to initialize the robots.
-
+	
 			//4. make each robot start at the bottom of the screen, side by side, facing up
 	
 		//5. use another for loop to iterate through the array and make each robot move 
@@ -26,5 +28,35 @@ public class _01_RobotRace {
     	
 	    //9. make the robots race around a circular track.
 
+public static void main(String[] args) {
+	Robot[] array = new Robot[5];
+		
+	for(int i = 0; i<array.length; i++) {
+		array[i] = new Robot();
+		
+		array[i].setX(80+(100*(i+1)));
+		array[i].setY(550);
+	}
+	boolean finished = false;	
+	while(!finished) {
+	for(int i=0;i<array.length;i++) {
+		if(array[i].getY()<0) {
+			finished = true;
+			JOptionPane.showMessageDialog(null, "Robot " + i + "is the winner!");
+		}
+		else {
+			
+		
+		Random rdm = new Random();
+		int movement = rdm.nextInt(50);
+		
+		array[i].move(movement);
+		}
+	}
+	}
 	
+	
+		
+		
+	}
 }

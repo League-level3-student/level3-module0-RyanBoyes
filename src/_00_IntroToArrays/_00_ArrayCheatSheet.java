@@ -47,17 +47,22 @@ public class _00_ArrayCheatSheet {
 	int ran = rdm.nextInt(50);
 		arrayint[i] = ran;
 		//System.out.println(arrayint[i]);
-		
-		
-		
+				
+		if(arrayint[i]==1) {
+			//System.out.println(arrayint[i]);
 		}
+		
 		//9. without printing the entire array, print only the smallest number on the array
 		
 		//10 print the entire array to see if step 8 was correct
-
-		//11. print the largest number in the array.
 		
+		//11. print the largest number in the array.
+		if(arrayint[i]==49) {
+			//System.out.println(arrayint[i]);
+		}
 		//12. print only the last element in the array
 		
+		}
+		System.out.println(arrayint[49]);
 	}
 }
